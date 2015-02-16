@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="10dip">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="center|top">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textSize="24.5sp"
+            android:layout_marginBottom="25dip"
+            android:gravity="center"
+            android:text="Calling Activity"
+            android:id="@+id/textView1" />
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:stretchColumns="1">
+            <TableRow
+                android:layout_width="match_parent"
+                android:id="@+id/tableRow1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content" />
+                <EditText
+                    android:id="@+id/firstName"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:id="@+id/tableRow2"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:id="@+id/textView3" />
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lastName"
+                    android:layout_width="match_parent" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:id="@+id/tableRow3"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent" />
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:inputType="number" />
+            </TableRow>
+        </TableLayout>
+        <Button
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:text="Call Next Activity"
+            android:gravity="center"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+</LinearLayout>
